@@ -1,5 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import GoogleIcon from "../assets/google.svg";
+import GithubIcon from "../assets/github.svg";
+import DashboardGif from "../assets/Dashboards.gif";
 
 export default function AuthChoice() {
   const navigate = useNavigate();
@@ -27,13 +30,14 @@ export default function AuthChoice() {
             </button>
             <div className="flex items-center justify-center gap-4 mt-4">
               <button className="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg flex items-center gap-2">
-                <img src="/google-icon.svg" alt="Google" className="w-5 h-5" />
-                Google
-              </button>
-              <button className="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg flex items-center gap-2">
-                <img src="/github-icon.svg" alt="GitHub" className="w-5 h-5" />
-                GitHub
-              </button>
+  <img src={GoogleIcon} alt="Google" className="w-5 h-5" />
+  Google
+</button>
+
+               <button className="bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-lg flex items-center gap-2">
+  <img src={GithubIcon} alt="Github" className="w-5 h-5" />
+  Github
+</button>
             </div>
           </div>
 
@@ -49,13 +53,14 @@ export default function AuthChoice() {
         </div>
 
         {/* Right: Illustration */}
-        <div className="md:w-1/2 bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center p-6">
-          <img
-            src="/dashboard-illustration.svg"
-            alt="Dashboard Illustration"
-            className="w-full max-w-sm"
-          />
-        </div>
+       <div className="md:w-1/2 bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center p-6">
+  <img
+    src={DashboardGif}
+    alt="Dashboard Illustration"
+    className="w-full max-w-sm"
+  />
+</div>
+
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import LinkMethod from "../components/LinkMethod";
 import { Link } from "react-router-dom";
+import PaymentAnimatedModal from "../components/PaymentAnimatedModal";
 
 // small utility for sparkline (SVG path)
 function sparklinePath(values, width = 120, height = 36) {
